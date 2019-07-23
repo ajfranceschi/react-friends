@@ -1,10 +1,22 @@
 import React, {Component} from 'react';
 
 class SearchBox extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            input: ''
+        }
+    }
     render() {
         return (
-            <div>
-                <input type="text" placeholder='Search your bot'/>
+            <div className='pa2'>
+                <input
+                    className='pa3 ba b--green '
+                    type="text"
+                    placeholder='Search your bot'
+                    onChange={this.props.searchBoxDidChange}
+                />
 
             </div>
         )
