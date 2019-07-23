@@ -4,7 +4,10 @@ import {robots} from './Robots';
 
 const App = () => {
     return (
-        <CardList robots={robots}/>
+        <div>
+            <h1>REACTING FRIENDS</h1>
+            <CardList robots={robots}/>
+        </div>
     )
 };
 
