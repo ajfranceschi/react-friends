@@ -3,18 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'tachyons'
 import * as serviceWorker from './serviceWorker';
-import Card from './Card';
+import CardList from "./CardList";
 import {robots} from './Robots';
 
-console.log(robots)
 ReactDOM.render(
-
-    <div>
-        <Card robot={robots[0]}/>
-        <Card robot={robots[1]}/>
-        <Card robot={robots[2]}/>
-    </div>,
-
+    <CardList robots={robots}/>,
     document.getElementById('root')
 );
 
