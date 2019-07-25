@@ -3,6 +3,9 @@ import Card from './Card';
 
 
 const CardList = (props) => {
+    // if (true) {
+    //     throw new Error('Noooo');
+    // }
     return(
         <div>
             {
