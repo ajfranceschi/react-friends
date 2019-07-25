@@ -3,6 +3,7 @@ import CardList from "./CardList";
 import SearchBox from './SearchBox';
 // import {robots} from './Robots';
 import './App.css';
+import Scroll from './Scroll';
 
 class App extends Component {
 
@@ -41,7 +42,9 @@ class App extends Component {
                 <div className='tc'>
                     <h1 className='light-green'>REACTING FRIENDS</h1>
                     <SearchBox searchBoxDidChange={this.searchBoxDidChange}/>
-                    <CardList robots={filteredRobots}/>
+                    <Scroll>
+                        <CardList robots={filteredRobots}/>
+                    </Scroll>
                 </div>
             )
         }
