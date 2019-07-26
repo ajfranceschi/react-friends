@@ -7,11 +7,11 @@ const initialState = {
 }
 
 //searchRobots reducer is a function that is going to be used in multiple places
-export const searchRobts = (currentState = initialState, action = {}) => {
+export const searchRobots = (currentState = initialState, action = {}) => {
     switch (action.type) {
         case CHANGE_SEARCH_FIELD:
-            return Object.assign({}, currentState, {searchField: action.payload})
-            // return {...currentState, searchField: action.payload};
+            // return Object.assign({}, currentState, {searchField: action.payload})
+            return {...currentState, searchField: action.payload};
         default:
             return currentState;
     }
