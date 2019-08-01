@@ -56,7 +56,6 @@ class App extends Component {
         // const {robots} = this.state;
         const {robots, searchField, isPending, /*error*/} = this.props;
 
-
         const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchField.toLowerCase());
         })
