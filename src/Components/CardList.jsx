@@ -3,7 +3,6 @@ import Card from './Card';
 
 
 const CardList = (props) => {
-    console.log(props)
     // if (true) {
     //     throw new Error('Noooo');
     // }

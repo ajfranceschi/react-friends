@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import CardList from "../Components/CardList";
 import SearchBox from '../Components/SearchBox';
-// import {robots} from './Robots';
 import './App.css';
 import Scroll from '../Components/Scroll';
 import ErrorBoundary from "./ErrorBoundary";
 import {setSearchField, requestRobots} from "../actions";
+import Header from "../Components/Header";
 
 const mapStateToProps = state => {
     return {
@@ -63,7 +63,7 @@ class App extends Component {
         return /*robots.length*/ isPending === true
             ? <h1>Loading</h1>
             : (<div className='tc'>
-                <h1 className='light-green'>REACTING FRIENDS</h1>
+                <Header />
                 <SearchBox searchBoxDidChange={this.props.searchBoxDidChange}/>
                 <Scroll>
                     <ErrorBoundary>
