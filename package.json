@@ -11,6 +11,7 @@
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.11.1"
   },
+  "homepage": "https://francofle.github.io/react-friends",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
